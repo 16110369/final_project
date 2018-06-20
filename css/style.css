@@ -1,3 +1,54 @@
-.jarak{
-	height:100px;
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Khand');
+
+
+nav { background-color: #27ae60;
+color: #fff; }
+
+footer{
+  color: white;
 }
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: #555;
+  text-align: center;
+}
+.footer-middle{
+   background: #444;
+  padding-top: 2em;
+  color: white;
+}
+
+.card-menu{
+	background-color: #27ae60;
+}
+
+
+.nav-link{
+	color: #fff;
+}
+
+.nav-link:hover{
+	color: #ddd;
+}
+
+.dp-link{
+	color: #444;
+}
+
+.dp-link:hover{
+	color: #27ae60;
+}
+
+.btn-outline-white {
+  border: 2px solid #fff !important;
+  background-color: transparent !important;
+  color: #fff !important; }
+
+  body{
+  }
