@@ -19,7 +19,7 @@
 
 <body>
 
-	<!--Navbar-->
+  <!--Navbar-->
 <nav class="navbar fixed-top navbar-expand-lg">
 
     <!-- Navbar brand -->
@@ -41,14 +41,13 @@
             <li class="nav-item dropdown ml-5">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Alat Pertanian</a>
+                    <a class="dropdown-item" href="#">Pupuk</a>
                 </div>
             </li>
 
             <li>
-            	<form class="form-inline ml-5">
+              <form class="form-inline ml-5">
             <div class="lg-form my-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Cari..." aria-label="Search">
             </div>
@@ -60,19 +59,19 @@
 
         <ul class="navbar-nav mr-5">
         <li class="nav-item">
-        	<a class="nav-link mr-2" href="keranjang.html"><i class="fa fa-shopping-cart"></i> Keranjang</a>
+          <a class="nav-link mr-2" href="keranjang.html"><i class="fa fa-shopping-cart"></i> Keranjang</a>
         </li>
         <li class="nav-item">
-        	<a class="nav-link mr-2" href="notifikasi.html"><i class="fa fa-bell-o"></i> Notifikasi</a>
+          <a class="nav-link mr-2" href="notifikasi.html"><i class="fa fa-bell-o"></i> Notifikasi</a>
         </li>
         <li class="nav-item">
-        	<a class="nav-link mr-2" href="forum.html"><i class="fa fa-info"></i> Forum</a>
+          <a class="nav-link mr-2" href="forum.html"><i class="fa fa-info"></i> Forum</a>
         </li>
         <li class="nav-item">
-        	<a class="nav-link ml-5" href="login.html">Login</a>
+          <a class="nav-link ml-5" data-toggle="modal" href="#modalMasuk">Masuk</a>
         </li>
         <li class="nav-item">
-        	<a class="nav-link" href="register.html">Register</a>
+          <a class="nav-link" data-toggle="modal" href="#modalDaftar">Daftar</a>
         </li>
         </ul>
 
@@ -81,6 +80,10 @@
 
 </nav>
 <!--/.Navbar-->
+
+
+
+
 
 <!-- Start your project here-->
     <div style="height: 100vh">
@@ -94,71 +97,162 @@
     </div>
     <!-- /Start your project here-->
 
-<!-- Footer-->
+
+
+
+
+<!--Popup Masuk-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="modalMasuk">
+        <!-- Card -->
+<div class="card">
+
+    <!-- Card body -->
+    <div class="card-body">
+
+        <!-- Material form register -->
+        <form>
+            <p class="h4 text-left py-4">Masuk <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button></p>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormCardEmailEx" class="form-control">
+                <label for="materialFormCardEmailEx" class="font-weight-light">Email</label>
+            </div>
+
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormCardPasswordEx" class="form-control">
+                <label for="materialFormCardPasswordEx" class="font-weight-light">Kata Sandi</label>
+            </div>
+
+            <div class="text-center py-4 mt-3">
+                <button class="btn bg" type="submit">Masuk</button>
+            </div>
+        </form>
+        <!-- Material form register -->
+
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->
+</div>
+</div>
+</div>
+
+<!--End Popup Masuk-->
+
+
+<!--Popup Daftar-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="modalDaftar">
+        <!-- Card -->
+<div class="card">
+
+    <!-- Card body -->
+    <div class="card-body">
+
+        <!-- Material form register -->
+        <form>
+            <p class="h4 text-left py-4">Daftar <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button></p>
+
+            <!-- Material input text -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="materialFormCardNameEx" class="form-control">
+                <label for="materialFormCardNameEx" class="font-weight-light">Nama</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormCardEmailEx" class="form-control">
+                <label for="materialFormCardEmailEx" class="font-weight-light">Email</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                <input type="email" id="materialFormCardConfirmEx" class="form-control">
+                <label for="materialFormCardConfirmEx" class="font-weight-light">Masukkan Ulang Email</label>
+            </div>
+
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormCardPasswordEx" class="form-control">
+                <label for="materialFormCardPasswordEx" class="font-weight-light">Kata Sandi</label>
+            </div>
+
+            <div class="text-center py-4 mt-3">
+                <button class="btn bg" type="submit">Daftar</button>
+            </div>
+        </form>
+        <!-- Material form register -->
+
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->
+</div>
+</div>
+</div>
+
+<!--End Popup Daftar-->
+
+<!--Footer-->
 <footer class="mainfooter" role="contentinfo">
   <div class="footer-middle">
   <div class="container">
-    <div class="row">
+    <div class="row pb-3">
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>Address</h4>
-          <address>
-								<ul class="list-unstyled">
-									<li>
-                    City Hall<br>
-										212  Street<br>
-										Lawoma<br>
-										735<br>
-									</li>
-									<li>
-										Phone: 0
-									</li>
-								</ul>
-							</address>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4>Popular Services</h4>
+          <h4><b>Kutani</b></h4>
           <ul class="list-unstyled">
-            <li><a href="#"></a></li>
-            <li><a href="#">Payment Center</a></li>
-            <li><a href="#">Contact Directory</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="#">News and Updates</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a class="footext" href="#">Tentang Kami</a></li>
           </ul>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>Website Information</h4>
+          <h4><b>Beli</b></h4>
           <ul class="list-unstyled">
-            <li><a href="#">Website Tutorial</a></li>
-            <li><a href="#">Accessibility</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Webmaster</a></li>
+            <li><a class="footext" href="#">Cara Berbelanja</a></li>
+            <li><a class="footext" href="#">Pembayaran</a></li>
           </ul>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>Popular Departments</h4>
+          <h4><b>Bantuan</b></h4>
           <ul class="list-unstyled">
-            <li><a href="#">Parks and Recreation</a></li>
-            <li><a href="#">Public Works</a></li>
-            <li><a href="#">Police Department</a></li>
-            <li><a href="#">Fire</a></li>
-            <li><a href="#">Mayor and City Council</a></li>
-            <li>
-              <a href="#"></a>
-            </li>
+            <li><a class="footext" href="#">Syarat dan Ketentuan</a></li>
+            <li><a class="footext" href="#">Kebijakan Privasi</a></li>
+            <li><a class="footext" href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4><b>Keamanan</b></h4>
+          <ul class="list-unstyled">
+            <li><a class="footext" href="#">Parks and Recreation</a></li>
           </ul>
         </div>
       </div>
@@ -168,7 +262,7 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="row">
-      	<div class="col p-2 m-1 align-self-center">&copy; Copyright 2016 - City of USA.  All rights reserved.</div>
+        <div class="col p-2 m-1 align-self-center">&copy; Copyright 2018 - <a class="footext" href ="index.html"><b>Kutani</b></a>.  All rights reserved.</div>
       </div>
     </div>
   </div>
