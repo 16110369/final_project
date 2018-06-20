@@ -63,12 +63,18 @@ footer a:hover{
 .footext:hover{
   	color: #16a085;
 }
-.jarak{
-  height:100px;
+
+.margin {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
-.jarak1{
-  height:10px;
+
+.gambardetail {
+  height: 350px;
+  width: 200px;
 }
-.btn-color{
-  background-color:#16a085;
+
+.detailproduk {
+  margin: 200px;
 }
