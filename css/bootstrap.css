@@ -2706,10 +2706,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #28a745;
+  color: #16a085;
   background-color: transparent;
   background-image: none;
-  border-color: #28a745;
+  border-color: #16a085;
 }
 
 .btn-outline-success:hover {
