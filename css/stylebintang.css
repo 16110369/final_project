@@ -48,3 +48,13 @@
 .rodoktengah {
   margin-left: 10%;
 }
+
+.cardindex {
+  height: 70px;
+  width: 200px;
+}
+
+.padingcard {
+  padding-left: 10px;
+  padding-right: 100px;
+}
