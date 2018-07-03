@@ -241,3 +241,14 @@ z-index:100;
   line-height: 1.5;
   border-radius: 0.1rem;
 }
+
+.buttonhub{
+  border-color:#16a085;
+  background-color: #DCDDDD;
+  border:1px; 
+}
+
+.profilepng{
+  height: 35px;
+  width: auto;
+}
