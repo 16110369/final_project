@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,10 +47,11 @@
             </li>
 
             <li>
-              <form class="form-inline m-1">
-    <input class="form-control form-control-sm ml-3 mr-2 w-75" type="text" placeholder="Cari Produk" aria-label="Search">
-    <a href="pencarian.html"><i class="fa fa-search whtColor ml-3" aria-hidden="true"></i></a>
-</form>
+              <form class="form-inline ml-5">
+            <div class="lg-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Cari..." aria-label="Search">
+            </div>
+        </form>
             </li>
 
         </ul>
@@ -61,16 +62,13 @@
           <a class="nav-link mr-2" href="keranjang.html"><i class="fa fa-shopping-cart"></i> Keranjang</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mr-2" href="pemberitahuan.html"><i class="fa fa-bell-o"></i> Notifikasi</a>
+          <a class="nav-link mr-2" data-toggle="modal" href="#notif"><i class="fa fa-bell-o"></i> Notifikasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mr-2" href="forum.html"><i class="fa fa-info"></i> Forum</a>
+          <a class="nav-link mr-2" data-toggle="modal" href="#forum"><i class="fa fa-info"></i> Forum</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5" data-toggle="modal" href="#modalMasuk">Masuk</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" href="#modalDaftar">Daftar</a>
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="profile.html"><i class="fa fa-user"></i> Akun</a>
         </li>
         </ul>
 
@@ -241,7 +239,57 @@
 </div>
 <!--End Popup Daftar-->
 
+<!--Popup Forum-->
 
+<div class="container my-4">
+  <div class="row">
+    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="forum">
+        <!-- Card -->
+<div class="card">
+
+    <!-- Card body -->
+    <div class="card-body">
+        <p class="h4 text-left py-4">Ketentuan <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button></p>
+        Akses forum hanya untuk pengguna yang sudah terdaftar.
+
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->
+</div>
+</div>
+</div>
+
+<!--End Popup Forum-->
+
+<!--Popup Notif-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="notif">
+        <!-- Card -->
+<div class="card">
+
+    <!-- Card body -->
+    <div class="card-body">
+        <p class="h4 text-left py-4">Ketentuan <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button></p>
+        Akses notifikasi hanya untuk pengguna yang sudah terdaftar.
+
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->
+</div>
+</div>
+</div>
+
+<!--End Popup Notif-->
 
 
 <!--Footer-->

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Khand');
+
+.bg{
+	background: #16a085;
+}
+
+.bg-hitam{
+  background: #444;
+}
+
+.bg-abu2{
+  background: #fbfbfb;
+}
+
+.bg-abu{
+  background: #f9f9f9;
+}
+
+.txtColor{
+	color: #16a085;
+}
+
+nav { background-color: #16a085;
+color: #fff; }
+
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: #555;
+  text-align: center;
+}
+.footer-middle{
+   background: #444;
+  padding-top: 2em;
+  color: white;
+}
+
+.card-menu{
+	background-color: #16a085;
+}
+
+
+.nav-link{
+	color: #fff;
+}
+
+.nav-link:hover{
+	color: #ddd;
+}
+
+.dp-link{
+	color: #444;
+}
+
+.dp-link:hover{
+	color: #16a085;
+}
+
+.btn-outline-white {
+  border: 2px solid #fff !important;
+  background-color: transparent !important;
+  color: #fff !important; }
+
+.footext{
+	color: #eee;
+}
+.footext:hover{
+  	color: #16a085;
+}
+
+.margin {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.marginulasan {
+  margin-left: 15%;
+}
+
+.gambardetail {
+  height: 350px;
+  width: 250px;
+}
+
+.detailproduk {
+  margin-left: 10%;
+}
+
+
+.border1{
+  border: 2px solid #343a40;
+}
+.col-69 {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 2px;
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 10% 20%;
+  flex: 0 10% 20%;
+  max-width: 20%;
+}
+
+.kecil {
+  font-size: 10px;
+}
+.kecil1 {
+  font-size: 10px;
+  text-align: left;
+}
+
+.gambarkomentar {
+  width: 50px;
+  height: 50px;
+}
+
+.mb {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
+/*Update baru*/
+
+.zoom {      
+-webkit-transition: all 0.3s ease-in-out;    
+-moz-transition: all 0.3s ease-in-out;    
+transition: all 0.3s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+-ms-transform: scale(1.10);    
+-moz-transform: scale(1.10);  
+-webkit-transform: scale(1.10);  
+-o-transform: scale(1.10);  
+transform: scale(1.10);    
+position:relative;      
+z-index:100;  
+}
+
+
+.jarak{
+  height:100px;
+}
+.jarak1{
+  height:10px;
+}
+.btn-color{
+  background-color:#16a085;
+}
+.warnatext{
+  color: black;
+}
+.warnatext1{
+  color: #16a085;
+}
+
+.paddingcol{
+  padding: 10px;
+}
+
+.card.chat-room .members-panel-1,
+.card.chat-room .chat-1 {
+  position: relative;
+  overflow-y: scroll; }
+
+.card.chat-room .members-panel-1 {
+  height: 570px; }
+
+.card.chat-room .chat-1 {
+  height: 495px; }
+
+.card.chat-room .friend-list li {
+  border-bottom: 1px solid #e0e0e0; }
+  .card.chat-room .friend-list li:last-of-type {
+    border-bottom: none; }
+
+.card.chat-room img.rounded-circle {
+  border-radius: 50%; }
+
+.card.chat-room img.avatar {
+  height: 3rem;
+  width: 3rem; }
+
+.card.chat-room .text-small {
+  font-size: 0.95rem; }
+
+.card.chat-room .text-smaller {
+  font-size: 0.75rem; }
+
+.scrollbar-light-blue::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-light-blue::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-light-blue::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #82B1FF; }
+
+.rare-wind-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#16a085), to(#16a085));
+  background-image: -webkit-linear-gradient(bottom, #16a085 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, white 0%, white 100%); }
+
+.chatcolor{
+  background-color: #DCDDDD;
+
+}
+
+.whtColor{
+  color: #fff;
+}
+
+.bdTentang{
+  border: 1px solid #e4e4e4;
+}
+
+/*new*/
+.btn-xs{
+  padding: 0.30rem 0.5rem;
+  font-size: 0.700rem;
+  line-height: 1.5;
+  border-radius: 0.1rem;
+}
+
+.buttonhub{
+  border-color:#16a085;
+  background-color: #DCDDDD;
+  border:1px; 
+}
+
+.profilepng{
+  height: 35px;
+  width: auto;
+}
