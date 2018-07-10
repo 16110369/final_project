@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<!--Navbar-->
+  <!--Navbar-->
 <nav class="navbar fixed-top navbar-expand-lg">
 
     <!-- Navbar brand -->
@@ -78,64 +78,33 @@
 <!--/.Navbar-->
 
 
-<!-- Start your project here-->
-        <div class="container">
-    <div class="row jarak"></div>
+
+<!--Content-->
+<div class="container my-4">
+  <div class="row">
+    <div class="col p-2 m-1 mt-4 align-self-center"><hr/><b>LOKASI</b><hr/></div>
+
+  </div>
+
 <div class="row">
-  <h3>FAISAL NUR HIDAYAT</h3>
-</div>
-<div class="row">
-            <div class="btn-group" role="group" aria-label="Basic example">
-       <a href="detailprofil.html"><button type="button" class="btn  btn-color">Biodata Diri</button></a>
-       <a href="daftaralamat.html"><button type="button" class="btn btn-color">Daftar Alamat</button></a>
-       <a href="Pembayaran.html"><button type="button" class="btn btn-color">Pembayaran</button></a>
-       <a href="rekeningbank.html"><button type="button" class="btn btn-color">Rekening Bank</button></a>
-       <a href="notifikasi.html"><button type="button" class="btn btn-color">Notifikasi</button></a>
-       <a href="../index.html"><button type="button" class="btn btn-color">Logout</button></a>
-            </div>
-</div>
-<div class="row jarak1"></div>
-<div class="row"><a href=""><button type="button" class="btn btn-color btn-sm">+ Tambah Alamat</button></a></div>
-<div class="row jarak1"></div>
-<div class="row font-weight-bold">
+    <div class="col p-2 m-1 mt-2 mb-3 text-center">
+    <div id="googleMap" style="width:100%;height:400px;"></div>
 
-          <div class="col-md-1">
-          
-          </div>
-          <div class="col-md-2">Penerima</div>
-          <div class="col-md-3">Alamat Penerima</div>
-          <div class="col-md-2">Daerah Penerima</div>
-          <div class="col-md-2">Pin Point</div>
-          <div class="col-md-2"></div>
-</div>
-<hr>
-<div class="row">
-          <div class="col-md-1">
-            <div class="form-check">
-                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                 <label class="form-check-label" for="defaultCheck1"></label>
-            </div>
-          </div>
-          <div class="col-md-2">Faisal Nur Hidayat</div>
-          <div class="col-md-3">KARANGDUWET 1,RT 02 RW 02,KARANGMOJO,KARANGMOJO,
-          GUNUNGKIDUL,YOGYAKARTA</div>
-          <div class="col-md-2">D.I. Yogyakarta, Kab. Gunungkidul, Karangmojo 55891
-          Indonesia</div>
-          <div class="col-md-2"><div class="row">
-                    <div class="col-md-1" class="md-form"><i class="fa fa-map-marker prefix grey-text"></i> <a href="lokasi.html">Lokasi Saya</a></div>
-              </div>
-            </div>
-          <div class="col-md-2">
-            <div class="row"><button type="button" class="btn btn-color btn-sm">Ubah</button></div>
-            <div class="row"><button type="button" class="btn btn-color btn-sm">Hapus</button></div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(-7.759396,110.408875),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
-          </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0KNqifcQ5yK_7Sn-EqZYfkGhAwx_LJ4E&callback=myMap"></script></div>
+
+  </div>
 
 </div>
-<div class="row"></div>
-</div>
-    <!-- /Start your project here-->
-
 
 
 
@@ -264,20 +233,61 @@
 </div>
 <!--End Popup Daftar-->
 
-<!--Popup Forum-->
-
 <div class="container my-4">
   <div class="row">
-    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="forum">
+    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="modalDaftar">
         <!-- Card -->
 <div class="card">
 
     <!-- Card body -->
     <div class="card-body">
-        <p class="h4 text-left py-4">Ketentuan <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
+
+        <!-- Material form register -->
+        <form>
+            <p class="h4 text-left py-4">Daftar <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button></p>
-        Akses forum hanya untuk pengguna yang sudah terdaftar.
+
+            <!-- Material input text -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="materialFormCardNameEx" class="form-control">
+                <label for="materialFormCardNameEx" class="font-weight-light">Nama</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormCardEmailEx" class="form-control">
+                <label for="materialFormCardEmailEx" class="font-weight-light">Email</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                <input type="email" id="materialFormCardConfirmEx" class="form-control">
+                <label for="materialFormCardConfirmEx" class="font-weight-light">Masukkan Ulang Email</label>
+            </div>
+
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormCardPasswordEx" class="form-control">
+                <label for="materialFormCardPasswordEx" class="font-weight-light">Kata Sandi</label>
+            </div>
+
+            <div class="text-center py-4 mt-3">
+                <button class="btn bg" type="submit">Daftar</button>
+            </div>
+        </form>
+        <!-- Material form register -->
+
+        <p class="text-center py-4">Atau Daftar menggunakan 
+          <a href="https://facebook.com"><img class="ml-4"src="http://icons.iconarchive.com/icons/martz90/circle/256/gmail-icon.png" height="32" width="32"></a>
+
+          <a href="https://gmail.com"><img class="ml-2" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" height="32" width="32"></a>
+          </p>
+
 
     </div>
     <!-- Card body -->
@@ -287,34 +297,9 @@
 </div>
 </div>
 </div>
+<!--End Popup Daftar-->
 
-<!--End Popup Forum-->
 
-<!--Popup Notif-->
-
-<div class="container my-4">
-  <div class="row">
-    <div class="col-4 p-2 m-auto mt-3 align-self-center modal hide" id="notif">
-        <!-- Card -->
-<div class="card">
-
-    <!-- Card body -->
-    <div class="card-body">
-        <p class="h4 text-left py-4">Ketentuan <button type="button" class="close waves-effect waves-light text-right" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button></p>
-        Akses notifikasi hanya untuk pengguna yang sudah terdaftar.
-
-    </div>
-    <!-- Card body -->
-
-</div>
-<!-- Card -->
-</div>
-</div>
-</div>
-
-<!--End Popup Notif-->
 
 <!--Footer-->
 <footer class="mainfooter" role="contentinfo">
